@@ -1,6 +1,6 @@
 // @flow
 const compareUnicode = (stringA: string, stringB: string): number => {
-  const result = stringA.localeCompare(stringB);
+  const result = stringA.localeCompare(stringB, 'en');
   return result ? result / Math.abs(result) : 0;
 };
 
